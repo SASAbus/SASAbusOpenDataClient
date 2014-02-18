@@ -276,7 +276,6 @@ public abstract class SASAbusOpenDataLocalStorage
          final long counterJSON = time2 - time1;
          final long counterUnmarshalling = time3 - time2;
 
-         
       }
       catch (Exception exxx)
       {
@@ -356,7 +355,7 @@ public abstract class SASAbusOpenDataLocalStorage
          {
             try
             {
-               json = "{ \"list\": " + json + "}"; // Create an obect for the array to easier unmarshalling to java!
+               json = "{ \"list\": " + json + "}"; // Create an object for the array to easier unmarshalling to java!
 
                if (table.equals("REC_ORT")) // Precalculate lines of a bus stations
                {
@@ -472,7 +471,7 @@ public abstract class SASAbusOpenDataLocalStorage
          {
             try
             {
-               json = "{ \"list\": " + json + "}"; // Create an obect for the array to easier unmarshalling to java!
+               json = "{ \"list\": " + json + "}"; // Create an object for the array to easier unmarshalling to java!
                String fileName = table.replaceAll("[&=]", "_");
                SASAbusOpenDataLocalStorage.this.setData(fileName, json);
 
