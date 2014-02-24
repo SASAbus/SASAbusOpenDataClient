@@ -604,6 +604,60 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             structure.close();
          }
       });
+      this.emptyObjectCheck.put("it.sasabz.sasabus.opendata.client.model.FavouriteList", new bz.davide.dmxmljson.unmarshalling.EmptyFieldChecker<it.sasabz.sasabus.opendata.client.model.FavouriteList>() {
+         @Override public void check(it.sasabz.sasabus.opendata.client.model.FavouriteList  ret){
+            // list
+            if (ret.list != null)
+               throw new RuntimeException("The constructor initialized the field it.sasabz.sasabus.opendata.client.model.FavouriteList.list");
+         }
+      });
+      this.putInstanceFactory("it.sasabz.sasabus.opendata.client.model.FavouriteList", new bz.davide.dmxmljson.unmarshalling.InstanceFactory() {
+         @Override public Object newInstance() throws Exception {
+            it.sasabz.sasabus.opendata.client.model.FavouriteList ret = new it.sasabz.sasabus.opendata.client.model.FavouriteList();
+            emptyObjectCheck.get("it.sasabz.sasabus.opendata.client.model.FavouriteList").check(ret);
+            return ret;
+         }
+      });
+
+      this.putClassUnmarshaller("it.sasabz.sasabus.opendata.client.model.FavouriteList", new bz.davide.dmxmljson.unmarshalling.ClassUnmarshaller() {
+         @Override public void unmarshall(bz.davide.dmxmljson.unmarshalling.Structure structure, Object obj, java.util.HashMap<String, Object> identities) throws Exception {
+            structure.open();
+            String id = structure.getId();
+            if (id != null)
+               identities.put(id, obj);
+            bz.davide.dmxmljson.unmarshalling.Value value;
+            // list
+            if ((value = structure.property("list")) != null)
+               if (value.isNull())
+                  ((FavouriteList)obj).list = null;
+               else
+               {
+                  bz.davide.dmxmljson.unmarshalling.Array arr = value.array();        
+                  arr.open();        
+                  it.sasabz.sasabus.opendata.client.model.Favourite[] arrayList = new it.sasabz.sasabus.opendata.client.model.Favourite[arr.length()];       
+                  for (int i = 0; i < arrayList.length; i++) {                       
+                     value = arr.nextItem();                                       
+                     if (value.isNull())                                           
+                        arrayList[i] = null;                                       
+                     else                                                          
+                     {                                                                   
+                        bz.davide.dmxmljson.unmarshalling.Structure tmpStructure = value.structure();
+                        String refid = tmpStructure.getRefId();    
+                        if (refid != null)                              
+                           arrayList[i] = (it.sasabz.sasabus.opendata.client.model.Favourite)(identities.get(refid));                                                
+                        else {
+                           Object o = newInstance(tmpStructure.getRuntimeClassName("Favourite"));              
+                           internalUnmarschall(tmpStructure, o.getClass().getName(), o, identities); 
+                           arrayList[i] = (it.sasabz.sasabus.opendata.client.model.Favourite)(o);                                                
+                        }
+                     }                                                                   
+                  }                                                                   
+                  arr.close();        
+                  ((FavouriteList)obj).list = arrayList;
+               }
+            structure.close();
+         }
+      });
       this.emptyObjectCheck.put("it.sasabz.sasabus.opendata.client.model.BusLine", new bz.davide.dmxmljson.unmarshalling.EmptyFieldChecker<it.sasabz.sasabus.opendata.client.model.BusLine>() {
          @Override public void check(it.sasabz.sasabus.opendata.client.model.BusLine  ret){
             // LI_KUERZEL
@@ -1277,6 +1331,39 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                else
                {
                   ((BusLineWaitTimeAtStop)obj).STR_LI_VAR = value.string();
+               }
+            structure.close();
+         }
+      });
+      this.emptyObjectCheck.put("it.sasabz.sasabus.opendata.client.model.Favourite", new bz.davide.dmxmljson.unmarshalling.EmptyFieldChecker<it.sasabz.sasabus.opendata.client.model.Favourite>() {
+         @Override public void check(it.sasabz.sasabus.opendata.client.model.Favourite  ret){
+            // name
+            if (ret.name != null)
+               throw new RuntimeException("The constructor initialized the field it.sasabz.sasabus.opendata.client.model.Favourite.name");
+         }
+      });
+      this.putInstanceFactory("it.sasabz.sasabus.opendata.client.model.Favourite", new bz.davide.dmxmljson.unmarshalling.InstanceFactory() {
+         @Override public Object newInstance() throws Exception {
+            it.sasabz.sasabus.opendata.client.model.Favourite ret = new it.sasabz.sasabus.opendata.client.model.Favourite();
+            emptyObjectCheck.get("it.sasabz.sasabus.opendata.client.model.Favourite").check(ret);
+            return ret;
+         }
+      });
+
+      this.putClassUnmarshaller("it.sasabz.sasabus.opendata.client.model.Favourite", new bz.davide.dmxmljson.unmarshalling.ClassUnmarshaller() {
+         @Override public void unmarshall(bz.davide.dmxmljson.unmarshalling.Structure structure, Object obj, java.util.HashMap<String, Object> identities) throws Exception {
+            structure.open();
+            String id = structure.getId();
+            if (id != null)
+               identities.put(id, obj);
+            bz.davide.dmxmljson.unmarshalling.Value value;
+            // name
+            if ((value = structure.property("name")) != null)
+               if (value.isNull())
+                  ((Favourite)obj).name = null;
+               else
+               {
+                  ((Favourite)obj).name = value.string();
                }
             structure.close();
          }

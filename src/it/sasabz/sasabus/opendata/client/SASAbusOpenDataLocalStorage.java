@@ -43,6 +43,8 @@ import it.sasabz.sasabus.opendata.client.model.BusTripStartLine;
 import it.sasabz.sasabus.opendata.client.model.BusTripStartList;
 import it.sasabz.sasabus.opendata.client.model.BusTripStartVariant;
 import it.sasabz.sasabus.opendata.client.model.BusWaitTimeAtStopList;
+import it.sasabz.sasabus.opendata.client.model.Favourite;
+import it.sasabz.sasabus.opendata.client.model.FavouriteList;
 import it.sasabz.sasabus.opendata.client.model.SASAbusOpenDataMarshaller;
 import it.sasabz.sasabus.opendata.client.model.SASAbusOpenDataUnmarshaller;
 import it.sasabz.sasabus.opendata.client.model.StartDateList;
@@ -62,6 +64,8 @@ import bz.davide.dmxmljson.unmarshalling.json.JSONParser;
 public abstract class SASAbusOpenDataLocalStorage
 {
 
+   private static final String      FAVOURITES          = "FAVOURITES";
+
    SASAbusOpenDataUnmarshaller      unmarshaller;
 
    BusStationList                   REC_ORTCache        = null;
@@ -73,6 +77,8 @@ public abstract class SASAbusOpenDataLocalStorage
    BusWaitTimeAtStopList            REC_FRT_HZTCache    = null;
    BusDefaultWaitTimeAtStopList     ORT_HZTCache        = null;
    BusLineWaitTimeAtStopList        REC_LIVAR_HZTCache  = null;
+
+   FavouriteList                    favouriteList       = null;
 
    //HashMap<Integer, BusTripStartLine> busTripStartLineCache = new HashMap<Integer, BusTripStartLine>();
 
@@ -254,6 +260,30 @@ public abstract class SASAbusOpenDataLocalStorage
       //busTripStartLineCache.clear();
 
       //this.setData(key_data);
+   }
+
+   public FavouriteList getFavouriteList() throws IOException
+   {
+      if (this.favouriteList != null)
+      {
+         return this.favouriteList;
+      }
+      String json = this.getData(FAVOURITES);
+      this.favouriteList = new FavouriteList(new Favourite[0]);
+      if (json != null)
+      {
+         this.unmarshallSASAbusOpenData(json, this.favouriteList);
+      }
+      return this.favouriteList;
+   }
+
+   public void setFavouriteList(FavouriteList favouriteList) throws Exception
+   {
+      JSONStructure jsonStructure = new JSONStructure(0);
+      new SASAbusOpenDataMarshaller().marschall(favouriteList, jsonStructure);
+      String json = jsonStructure.toJSON(0);
+      this.setData(FAVOURITES, json);
+      this.favouriteList = favouriteList;
    }
 
    protected abstract void setData(String key, String data) throws IOException;

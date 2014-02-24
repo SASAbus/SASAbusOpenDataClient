@@ -25,36 +25,61 @@
 
 package it.sasabz.sasabus.opendata.client.model;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 
-public class BusStation implements Serializable
+public class BusStation
 {
 
-   String             ORT_NAME;
+   String                     ORT_NAME;
+   transient private String[] nameItDe;
 
-   ArrayList<BusStop> busstops;
+   ArrayList<BusStop>         busstops;
 
-   ArrayList<Integer> busLineIds;
+   ArrayList<Integer>         busLineIds;
 
-   public String getName_it()
+   public String findName_it()
    {
-      return ORT_NAME;
+      this.splitName();
+      return this.nameItDe[0];
    }
 
-   public String getName_de()
+   public String findName_de()
    {
-      return ORT_NAME;
+      this.splitName();
+      return this.nameItDe[1];
+   }
+
+   public String getORT_NAME()
+   {
+      return this.ORT_NAME;
    }
 
    public BusStop[] getBusStops()
    {
-      return busstops.toArray(new BusStop[busstops.size()]);
+      return this.busstops.toArray(new BusStop[this.busstops.size()]);
+   }
+
+   private void splitName()
+   {
+      if (this.nameItDe == null)
+      {
+         int pos = this.ORT_NAME.indexOf('-');
+         if (pos < 0)
+         {
+            this.nameItDe = new String[]{this.ORT_NAME.trim(), this.ORT_NAME.trim()};
+         }
+         else
+         {
+            String it = this.ORT_NAME.substring(0, pos).trim();
+            String de = this.ORT_NAME.substring(pos + 1).trim();
+            this.nameItDe = new String[]{it, de};
+         }
+      }
    }
 
    public void addBusLine(int LI_NR)
    {
-      if (!busLineIds.contains(LI_NR))
+      if (!this.busLineIds.contains(LI_NR))
       {
          this.busLineIds.add(LI_NR);
       }
@@ -63,7 +88,7 @@ public class BusStation implements Serializable
 
    public Integer[] getBusLines()
    {
-      return busLineIds.toArray(new Integer[busLineIds.size()]);
+      return this.busLineIds.toArray(new Integer[this.busLineIds.size()]);
    }
 
 }

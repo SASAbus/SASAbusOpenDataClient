@@ -25,11 +25,10 @@
 
 package it.sasabz.sasabus.opendata.client.model;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class BusStationList implements Serializable
+public class BusStationList
 {
    ArrayList<BusStation> list;
 
@@ -37,22 +36,22 @@ public class BusStationList implements Serializable
 
    public BusStation[] getList()
    {
-      return list.toArray(new BusStation[list.size()]);
+      return this.list.toArray(new BusStation[this.list.size()]);
    }
 
    transient HashMap<Integer, BusStop> cache = null;
 
    public BusStop findBusStop(int ORT_NR)
    {
-      if (cache == null)
+      if (this.cache == null)
       {
-         cache = new HashMap<Integer, BusStop>();
-         for (BusStop busStop : busStopsReferences)
+         this.cache = new HashMap<Integer, BusStop>();
+         for (BusStop busStop : this.busStopsReferences)
          {
-            cache.put(busStop.ORT_NR, busStop);
+            this.cache.put(busStop.ORT_NR, busStop);
          }
       }
-      return cache.get(ORT_NR);
+      return this.cache.get(ORT_NR);
    }
 
    public void setBusStopsReferences(BusStop[] busStopsReferences)

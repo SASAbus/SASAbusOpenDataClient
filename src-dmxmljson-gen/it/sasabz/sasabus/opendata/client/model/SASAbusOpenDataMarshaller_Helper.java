@@ -309,6 +309,33 @@ public class SASAbusOpenDataMarshaller_Helper extends bz.davide.dmxmljson.marsha
                structure.close();
          }
       });
+      this.putClassMarshaller("it.sasabz.sasabus.opendata.client.model.FavouriteList", new bz.davide.dmxmljson.marshalling.ClassMarshaller() {
+         @Override public void marshall(Object obj, String compileTimeClassName, bz.davide.dmxmljson.marshalling.Structure structure, java.util.IdentityHashMap<Object, bz.davide.dmxmljson.marshalling.Structure> identities, long[] seq, boolean superClass) throws Exception {
+            if (!superClass) {
+               if (isReference(structure, obj, identities, seq))
+                  return;
+               identities.put(obj, structure);
+               structure.open(shortName(compileTimeClassName), shortName(obj.getClass().getName()), null);
+            }
+            Object value;
+            // list
+            value = ((it.sasabz.sasabus.opendata.client.model.FavouriteList)obj).list;
+            if (value == null)
+               structure.property("list").nullValue();
+            else
+            {
+               it.sasabz.sasabus.opendata.client.model.Favourite[] rawarray = (it.sasabz.sasabus.opendata.client.model.Favourite[])value;                        
+               bz.davide.dmxmljson.marshalling.Array array = structure.property("list").array(rawarray.length);        
+               for (Object o: rawarray) {                                    
+                  if (o == null)                                              
+                     array.item().nullValue();                                
+                     internalMarschall(o, o.getClass().getName(), "it.sasabz.sasabus.opendata.client.model.Favourite", array.item().structure(), identities, seq, false);
+               }                                                              
+            }
+            if (!superClass)
+               structure.close();
+         }
+      });
       this.putClassMarshaller("it.sasabz.sasabus.opendata.client.model.BusLine", new bz.davide.dmxmljson.marshalling.ClassMarshaller() {
          @Override public void marshall(Object obj, String compileTimeClassName, bz.davide.dmxmljson.marshalling.Structure structure, java.util.IdentityHashMap<Object, bz.davide.dmxmljson.marshalling.Structure> identities, long[] seq, boolean superClass) throws Exception {
             if (!superClass) {
@@ -735,6 +762,27 @@ public class SASAbusOpenDataMarshaller_Helper extends bz.davide.dmxmljson.marsha
             else
             {
                     structure.property("STR_LI_VAR").string((String)value);                          
+            }
+            if (!superClass)
+               structure.close();
+         }
+      });
+      this.putClassMarshaller("it.sasabz.sasabus.opendata.client.model.Favourite", new bz.davide.dmxmljson.marshalling.ClassMarshaller() {
+         @Override public void marshall(Object obj, String compileTimeClassName, bz.davide.dmxmljson.marshalling.Structure structure, java.util.IdentityHashMap<Object, bz.davide.dmxmljson.marshalling.Structure> identities, long[] seq, boolean superClass) throws Exception {
+            if (!superClass) {
+               if (isReference(structure, obj, identities, seq))
+                  return;
+               identities.put(obj, structure);
+               structure.open(shortName(compileTimeClassName), shortName(obj.getClass().getName()), null);
+            }
+            Object value;
+            // name
+            value = ((it.sasabz.sasabus.opendata.client.model.Favourite)obj).name;
+            if (value == null)
+               structure.property("name").nullValue();
+            else
+            {
+                    structure.property("name").string((String)value);                          
             }
             if (!superClass)
                structure.close();

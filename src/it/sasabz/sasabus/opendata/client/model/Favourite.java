@@ -1,9 +1,9 @@
 /*
  * SASAbusOpenDataClient - Client and business logic for SASA bus open data
  *
- * BusStop.java
+ * Favourite.java
  *
- * Created: Jan 27, 2014 10:34:00 AM
+ * Created: Feb 24, 2014 10:34:00 AM
  *
  * Copyright (C) 2011-2014 Paolo Dongilli, Markus Windegger, Davide Montesin
  *
@@ -22,40 +22,25 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with SASAbus.  If not, see <http://www.gnu.org/licenses/>.
  */
-
+ 
 package it.sasabz.sasabus.opendata.client.model;
 
-
-public class BusStop
+public class Favourite
 {
-   int                  ORT_NR;
-   double               ORT_POS_BREITE;
-   double               ORT_POS_LAENGE;
+   String name;
 
-   transient BusStation busStation = null;
-
-   public int getORT_NR()
+   Favourite()
    {
-      return this.ORT_NR;
    }
 
-   public double getLat()
+   public Favourite(String name)
    {
-      return this.ORT_POS_BREITE;
+      super();
+      this.name = name;
    }
 
-   public double getLon()
+   public String getName()
    {
-      return this.ORT_POS_LAENGE;
-   }
-
-   public void setBusStation(BusStation busStation)
-   {
-      this.busStation = busStation;
-   }
-
-   public BusStation getBusStation()
-   {
-      return this.busStation;
+      return this.name;
    }
 }

@@ -114,7 +114,7 @@ public class BusTripCalculator
          }
 
          // Only for debug!
-         String busStopName = localStorage.getBusStations().findBusStop(busStops[i]).getBusStation().getName_it();
+         String busStopName = localStorage.getBusStations().findBusStop(busStops[i]).getBusStation().getORT_NAME();
          String debugTime = formatSeconds(currentTime);
 
          BusTripBusStopTime busStopTime = new BusTripBusStopTime();
