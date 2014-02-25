@@ -79,6 +79,10 @@ public class BusStation
 
    public void addBusLine(int LI_NR)
    {
+      if (this.busLineIds == null)
+      {
+         this.busLineIds = new ArrayList<Integer>();
+      }
       if (!this.busLineIds.contains(LI_NR))
       {
          this.busLineIds.add(LI_NR);
@@ -88,6 +92,10 @@ public class BusStation
 
    public Integer[] getBusLines()
    {
+      if (this.busLineIds == null)
+      {
+         this.busLineIds = new ArrayList<Integer>();
+      }
       return this.busLineIds.toArray(new Integer[this.busLineIds.size()]);
    }
 
