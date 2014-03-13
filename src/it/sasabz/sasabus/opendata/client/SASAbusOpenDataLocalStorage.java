@@ -48,12 +48,10 @@ import it.sasabz.sasabus.opendata.client.model.FavouriteList;
 import it.sasabz.sasabus.opendata.client.model.SASAbusOpenDataMarshaller;
 import it.sasabz.sasabus.opendata.client.model.SASAbusOpenDataUnmarshaller;
 import it.sasabz.sasabus.opendata.client.model.StartDateList;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-
 import bz.davide.dmxmljson.marshalling.json.JSONStructure;
 import bz.davide.dmxmljson.unmarshalling.IOUtil;
 import bz.davide.dmxmljson.unmarshalling.Structure;
@@ -315,18 +313,15 @@ public abstract class SASAbusOpenDataLocalStorage
       }
    }
 
-   final private static String[] TABLES = new String[]{
-            "REC_LID",
-            "LID_VERLAUF",
-            "REC_ORT",
-            "FIRMENKALENDER",
-            "BASIS_VER_GUELTIGKEIT",
-            //"REC_FRT",
-            "SEL_FZT_FELD",
-            "REC_FRT_FZT",
-            "REC_FRT_HZT",
-            "ORT_HZT",
-            "REC_LIVAR_HZT"             };
+   final private static String[] TABLES = new String[] { "REC_LID", "LID_VERLAUF", "REC_ORT", "FIRMENKALENDER",
+                                        //"REC_FRT",
+         "SEL_FZT_FELD",
+         "REC_FRT_FZT",
+         "REC_FRT_HZT",
+         "ORT_HZT",
+         "REC_LIVAR_HZT",
+                                        //"BASIS_VER_GUELTIGKEIT", 
+                                        };
 
    public void asyncReadRemoteVersionDate(String baseUrl,
                                           AsyncJSONDownloader jsonDownloader,
@@ -362,7 +357,8 @@ public abstract class SASAbusOpenDataLocalStorage
 
    public void asyncDownloadSASAbusOpenDataToLocalStore(final String baseUrl,
                                                         final AsyncJSONDownloader jsonDownloader,
-                                                        final SASAbusOpenDataDownloadCallback progressCallback) throws IOException
+                                                        final SASAbusOpenDataDownloadCallback progressCallback)
+                                                                                                               throws IOException
    {
 
       ArrayList<String> tables = new ArrayList<String>(Arrays.asList(TABLES));
@@ -397,16 +393,11 @@ public abstract class SASAbusOpenDataLocalStorage
 
                if (tables.size() > 0)
                {
-                  SASAbusOpenDataLocalStorage.this.downloadTable(baseUrl,
-                                                                 jsonDownloader,
-                                                                 tables,
-                                                                 progressCallback);
+                  SASAbusOpenDataLocalStorage.this.downloadTable(baseUrl, jsonDownloader, tables, progressCallback);
                }
                else
                {
-                  SASAbusOpenDataLocalStorage.this.downloadStep1Complete(baseUrl,
-                                                                         jsonDownloader,
-                                                                         progressCallback);
+                  SASAbusOpenDataLocalStorage.this.downloadStep1Complete(baseUrl, jsonDownloader, progressCallback);
                }
             }
             catch (IOException e)
@@ -482,6 +473,7 @@ public abstract class SASAbusOpenDataLocalStorage
             parameters.add("REC_FRT&LI_NR=" + busLineId + "&TAGESART_NR=" + dayTypeId);
          }
       }
+      parameters.add("BASIS_VER_GUELTIGKEIT");
       this.downloadStep2(baseUrl, jsonDownloader, parameters, parameters.size(), progressCallback);
    }
 
