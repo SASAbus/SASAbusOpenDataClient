@@ -313,15 +313,16 @@ public abstract class SASAbusOpenDataLocalStorage
       }
    }
 
-   final private static String[] TABLES = new String[] { "REC_LID", "LID_VERLAUF", "REC_ORT", "FIRMENKALENDER",
-                                        //"REC_FRT",
+   final private static String[] TABLES = new String[] {
+         "REC_LID",
+         "LID_VERLAUF",
+         "REC_ORT",
+         "FIRMENKALENDER",
          "SEL_FZT_FELD",
          "REC_FRT_FZT",
          "REC_FRT_HZT",
          "ORT_HZT",
-         "REC_LIVAR_HZT",
-                                        //"BASIS_VER_GUELTIGKEIT", 
-                                        };
+         "REC_LIVAR_HZT"               };
 
    public void asyncReadRemoteVersionDate(String baseUrl,
                                           AsyncJSONDownloader jsonDownloader,
