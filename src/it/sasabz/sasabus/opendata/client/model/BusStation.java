@@ -37,6 +37,10 @@ public class BusStation
 
    ArrayList<Integer>         busLineIds;
 
+   String                     ORT_GEMEINDE;
+
+   transient String           routingName;
+
    public String findName_it()
    {
       this.splitName();
@@ -54,6 +58,12 @@ public class BusStation
       return this.ORT_NAME;
    }
 
+   public String getRoutingName()
+   {
+      this.splitName();
+      return this.routingName;
+   }
+
    public BusStop[] getBusStops()
    {
       return this.busstops.toArray(new BusStop[this.busstops.size()]);
@@ -63,17 +73,30 @@ public class BusStation
    {
       if (this.nameItDe == null)
       {
-         int pos = this.ORT_NAME.indexOf('-');
-         if (pos < 0)
+         String gemIt = "";
+         String gemDe = "";
+
+         int pos = this.ORT_GEMEINDE.indexOf('-');
+
+         gemIt = "(" + this.ORT_GEMEINDE.substring(0, pos).trim() + ")";
+         gemDe = "(" + this.ORT_GEMEINDE.substring(pos + 1).trim() + ")";
+
+         pos = this.ORT_NAME.indexOf('-');
+
+         String it;
+         String de;
+         if (pos < 0) // Minigolf
          {
-            this.nameItDe = new String[]{this.ORT_NAME.trim(), this.ORT_NAME.trim()};
+            it = de = this.ORT_NAME;
          }
          else
          {
-            String it = this.ORT_NAME.substring(0, pos).trim();
-            String de = this.ORT_NAME.substring(pos + 1).trim();
-            this.nameItDe = new String[]{it, de};
+            it = this.ORT_NAME.substring(0, pos).trim();
+            de = this.ORT_NAME.substring(pos + 1).trim();
          }
+         this.nameItDe = new String[] { it + " " + gemIt, de + " " + gemDe };
+         this.routingName = gemIt + " " + it + " - " + gemDe + " " + de;
+
       }
    }
 

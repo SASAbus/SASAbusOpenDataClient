@@ -388,6 +388,14 @@ public class SASAbusOpenDataMarshaller_Helper extends bz.davide.dmxmljson.marsha
                structure.open(shortName(compileTimeClassName), shortName(obj.getClass().getName()), null);
             }
             Object value;
+            // ORT_GEMEINDE
+            value = ((it.sasabz.sasabus.opendata.client.model.BusStation)obj).ORT_GEMEINDE;
+            if (value == null)
+               structure.property("ORT_GEMEINDE").nullValue();
+            else
+            {
+                    structure.property("ORT_GEMEINDE").string((String)value);                          
+            }
             // ORT_NAME
             value = ((it.sasabz.sasabus.opendata.client.model.BusStation)obj).ORT_NAME;
             if (value == null)

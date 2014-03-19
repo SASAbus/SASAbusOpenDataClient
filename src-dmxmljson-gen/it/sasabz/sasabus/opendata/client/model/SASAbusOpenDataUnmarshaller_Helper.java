@@ -36,7 +36,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             // list
             if ((value = structure.property("list")) != null)
                if (value.isNull())
-                  ((BusLineList)obj).list = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusLineList)obj).list = null;
                else
                {
                   bz.davide.dmxmljson.unmarshalling.Array arr = value.array();        
@@ -90,7 +90,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             // list
             if ((value = structure.property("list")) != null)
                if (value.isNull())
-                  ((BusStationList)obj).list = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusStationList)obj).list = null;
                else
                {
                   bz.davide.dmxmljson.unmarshalling.Array arr = value.array();        
@@ -143,7 +143,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             // list
             if ((value = structure.property("list")) != null)
                if (value.isNull())
-                  ((StartDateList)obj).list = null;
+                  ((it.sasabz.sasabus.opendata.client.model.StartDateList)obj).list = null;
                else
                {
                   bz.davide.dmxmljson.unmarshalling.Array arr = value.array();        
@@ -197,7 +197,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             // list
             if ((value = structure.property("list")) != null)
                if (value.isNull())
-                  ((BusTripStartList)obj).list = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusTripStartList)obj).list = null;
                else
                {
                   bz.davide.dmxmljson.unmarshalling.Array arr = value.array();        
@@ -251,7 +251,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             // list
             if ((value = structure.property("list")) != null)
                if (value.isNull())
-                  ((BusDayTypeList)obj).list = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusDayTypeList)obj).list = null;
                else
                {
                   bz.davide.dmxmljson.unmarshalling.Array arr = value.array();        
@@ -305,7 +305,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             // list
             if ((value = structure.property("list")) != null)
                if (value.isNull())
-                  ((BusPathList)obj).list = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusPathList)obj).list = null;
                else
                {
                   bz.davide.dmxmljson.unmarshalling.Array arr = value.array();        
@@ -359,7 +359,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             // list
             if ((value = structure.property("list")) != null)
                if (value.isNull())
-                  ((BusStandardTimeBetweenStopsList)obj).list = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusStandardTimeBetweenStopsList)obj).list = null;
                else
                {
                   bz.davide.dmxmljson.unmarshalling.Array arr = value.array();        
@@ -413,7 +413,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             // list
             if ((value = structure.property("list")) != null)
                if (value.isNull())
-                  ((BusExceptionTimeBetweenStopsList)obj).list = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusExceptionTimeBetweenStopsList)obj).list = null;
                else
                {
                   bz.davide.dmxmljson.unmarshalling.Array arr = value.array();        
@@ -467,7 +467,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             // list
             if ((value = structure.property("list")) != null)
                if (value.isNull())
-                  ((BusWaitTimeAtStopList)obj).list = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusWaitTimeAtStopList)obj).list = null;
                else
                {
                   bz.davide.dmxmljson.unmarshalling.Array arr = value.array();        
@@ -521,7 +521,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             // list
             if ((value = structure.property("list")) != null)
                if (value.isNull())
-                  ((BusDefaultWaitTimeAtStopList)obj).list = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusDefaultWaitTimeAtStopList)obj).list = null;
                else
                {
                   bz.davide.dmxmljson.unmarshalling.Array arr = value.array();        
@@ -575,7 +575,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             // list
             if ((value = structure.property("list")) != null)
                if (value.isNull())
-                  ((BusLineWaitTimeAtStopList)obj).list = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusLineWaitTimeAtStopList)obj).list = null;
                else
                {
                   bz.davide.dmxmljson.unmarshalling.Array arr = value.array();        
@@ -629,7 +629,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             // list
             if ((value = structure.property("list")) != null)
                if (value.isNull())
-                  ((FavouriteList)obj).list = null;
+                  ((it.sasabz.sasabus.opendata.client.model.FavouriteList)obj).list = null;
                else
                {
                   bz.davide.dmxmljson.unmarshalling.Array arr = value.array();        
@@ -689,10 +689,10 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             // LI_KUERZEL
             if ((value = structure.property("LI_KUERZEL")) != null)
                if (value.isNull())
-                  ((BusLine)obj).LI_KUERZEL = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusLine)obj).LI_KUERZEL = null;
                else
                {
-                  ((BusLine)obj).LI_KUERZEL = value.string();
+                  ((it.sasabz.sasabus.opendata.client.model.BusLine)obj).LI_KUERZEL = value.string();
                }
             // LI_NR
             if ((value = structure.property("LI_NR")) != null)
@@ -705,7 +705,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             // varlist
             if ((value = structure.property("varlist")) != null)
                if (value.isNull())
-                  ((BusLine)obj).varlist = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusLine)obj).varlist = null;
                else
                {
                   bz.davide.dmxmljson.unmarshalling.Array arr = value.array();        
@@ -726,6 +726,9 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
       });
       this.emptyObjectCheck.put("it.sasabz.sasabus.opendata.client.model.BusStation", new bz.davide.dmxmljson.unmarshalling.EmptyFieldChecker<it.sasabz.sasabus.opendata.client.model.BusStation>() {
          @Override public void check(it.sasabz.sasabus.opendata.client.model.BusStation  ret){
+            // ORT_GEMEINDE
+            if (ret.ORT_GEMEINDE != null)
+               throw new RuntimeException("The constructor initialized the field it.sasabz.sasabus.opendata.client.model.BusStation.ORT_GEMEINDE");
             // ORT_NAME
             if (ret.ORT_NAME != null)
                throw new RuntimeException("The constructor initialized the field it.sasabz.sasabus.opendata.client.model.BusStation.ORT_NAME");
@@ -752,18 +755,26 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             if (id != null)
                identities.put(id, obj);
             bz.davide.dmxmljson.unmarshalling.Value value;
+            // ORT_GEMEINDE
+            if ((value = structure.property("ORT_GEMEINDE")) != null)
+               if (value.isNull())
+                  ((it.sasabz.sasabus.opendata.client.model.BusStation)obj).ORT_GEMEINDE = null;
+               else
+               {
+                  ((it.sasabz.sasabus.opendata.client.model.BusStation)obj).ORT_GEMEINDE = value.string();
+               }
             // ORT_NAME
             if ((value = structure.property("ORT_NAME")) != null)
                if (value.isNull())
-                  ((BusStation)obj).ORT_NAME = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusStation)obj).ORT_NAME = null;
                else
                {
-                  ((BusStation)obj).ORT_NAME = value.string();
+                  ((it.sasabz.sasabus.opendata.client.model.BusStation)obj).ORT_NAME = value.string();
                }
             // busLineIds
             if ((value = structure.property("busLineIds")) != null)
                if (value.isNull())
-                  ((BusStation)obj).busLineIds = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusStation)obj).busLineIds = null;
                else
                {
                   bz.davide.dmxmljson.unmarshalling.Array arr = value.array();        
@@ -781,7 +792,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             // busstops
             if ((value = structure.property("busstops")) != null)
                if (value.isNull())
-                  ((BusStation)obj).busstops = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusStation)obj).busstops = null;
                else
                {
                   bz.davide.dmxmljson.unmarshalling.Array arr = value.array();        
@@ -834,10 +845,10 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             // VER_GUELTIGKEIT
             if ((value = structure.property("VER_GUELTIGKEIT")) != null)
                if (value.isNull())
-                  ((StartDate)obj).VER_GUELTIGKEIT = null;
+                  ((it.sasabz.sasabus.opendata.client.model.StartDate)obj).VER_GUELTIGKEIT = null;
                else
                {
-                  ((StartDate)obj).VER_GUELTIGKEIT = value.string();
+                  ((it.sasabz.sasabus.opendata.client.model.StartDate)obj).VER_GUELTIGKEIT = value.string();
                }
             structure.close();
          }
@@ -878,7 +889,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             // tagesartlist
             if ((value = structure.property("tagesartlist")) != null)
                if (value.isNull())
-                  ((BusTripStartLine)obj).tagesartlist = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusTripStartLine)obj).tagesartlist = null;
                else
                {
                   bz.davide.dmxmljson.unmarshalling.Array arr = value.array();        
@@ -935,18 +946,18 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             // BETRIEBSTAG
             if ((value = structure.property("BETRIEBSTAG")) != null)
                if (value.isNull())
-                  ((BusDayType)obj).BETRIEBSTAG = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusDayType)obj).BETRIEBSTAG = null;
                else
                {
-                  ((BusDayType)obj).BETRIEBSTAG = value.string();
+                  ((it.sasabz.sasabus.opendata.client.model.BusDayType)obj).BETRIEBSTAG = value.string();
                }
             // TAGESART_NR
             if ((value = structure.property("TAGESART_NR")) != null)
                if (value.isNull())
-                  ((BusDayType)obj).TAGESART_NR = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusDayType)obj).TAGESART_NR = null;
                else
                {
-                  ((BusDayType)obj).TAGESART_NR = value.string();
+                  ((it.sasabz.sasabus.opendata.client.model.BusDayType)obj).TAGESART_NR = value.string();
                }
             structure.close();
          }
@@ -979,15 +990,15 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             // LI_NR
             if ((value = structure.property("LI_NR")) != null)
                if (value.isNull())
-                  ((BusPathLine)obj).LI_NR = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusPathLine)obj).LI_NR = null;
                else
                {
-                  ((BusPathLine)obj).LI_NR = value.string();
+                  ((it.sasabz.sasabus.opendata.client.model.BusPathLine)obj).LI_NR = value.string();
                }
             // varlist
             if ((value = structure.property("varlist")) != null)
                if (value.isNull())
-                  ((BusPathLine)obj).varlist = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusPathLine)obj).varlist = null;
                else
                {
                   bz.davide.dmxmljson.unmarshalling.Array arr = value.array();        
@@ -1050,34 +1061,34 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             // FGR_NR
             if ((value = structure.property("FGR_NR")) != null)
                if (value.isNull())
-                  ((BusStandardTimeBetweenStops)obj).FGR_NR = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusStandardTimeBetweenStops)obj).FGR_NR = null;
                else
                {
-                  ((BusStandardTimeBetweenStops)obj).FGR_NR = value.string();
+                  ((it.sasabz.sasabus.opendata.client.model.BusStandardTimeBetweenStops)obj).FGR_NR = value.string();
                }
             // ORT_NR
             if ((value = structure.property("ORT_NR")) != null)
                if (value.isNull())
-                  ((BusStandardTimeBetweenStops)obj).ORT_NR = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusStandardTimeBetweenStops)obj).ORT_NR = null;
                else
                {
-                  ((BusStandardTimeBetweenStops)obj).ORT_NR = value.string();
+                  ((it.sasabz.sasabus.opendata.client.model.BusStandardTimeBetweenStops)obj).ORT_NR = value.string();
                }
             // SEL_FZT
             if ((value = structure.property("SEL_FZT")) != null)
                if (value.isNull())
-                  ((BusStandardTimeBetweenStops)obj).SEL_FZT = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusStandardTimeBetweenStops)obj).SEL_FZT = null;
                else
                {
-                  ((BusStandardTimeBetweenStops)obj).SEL_FZT = value.string();
+                  ((it.sasabz.sasabus.opendata.client.model.BusStandardTimeBetweenStops)obj).SEL_FZT = value.string();
                }
             // SEL_ZIEL
             if ((value = structure.property("SEL_ZIEL")) != null)
                if (value.isNull())
-                  ((BusStandardTimeBetweenStops)obj).SEL_ZIEL = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusStandardTimeBetweenStops)obj).SEL_ZIEL = null;
                else
                {
-                  ((BusStandardTimeBetweenStops)obj).SEL_ZIEL = value.string();
+                  ((it.sasabz.sasabus.opendata.client.model.BusStandardTimeBetweenStops)obj).SEL_ZIEL = value.string();
                }
             structure.close();
          }
@@ -1113,26 +1124,26 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             // FRT_FID
             if ((value = structure.property("FRT_FID")) != null)
                if (value.isNull())
-                  ((BusExceptionTimeBetweenStops)obj).FRT_FID = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusExceptionTimeBetweenStops)obj).FRT_FID = null;
                else
                {
-                  ((BusExceptionTimeBetweenStops)obj).FRT_FID = value.string();
+                  ((it.sasabz.sasabus.opendata.client.model.BusExceptionTimeBetweenStops)obj).FRT_FID = value.string();
                }
             // FRT_FZT_ZEIT
             if ((value = structure.property("FRT_FZT_ZEIT")) != null)
                if (value.isNull())
-                  ((BusExceptionTimeBetweenStops)obj).FRT_FZT_ZEIT = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusExceptionTimeBetweenStops)obj).FRT_FZT_ZEIT = null;
                else
                {
-                  ((BusExceptionTimeBetweenStops)obj).FRT_FZT_ZEIT = value.string();
+                  ((it.sasabz.sasabus.opendata.client.model.BusExceptionTimeBetweenStops)obj).FRT_FZT_ZEIT = value.string();
                }
             // ORT_NR
             if ((value = structure.property("ORT_NR")) != null)
                if (value.isNull())
-                  ((BusExceptionTimeBetweenStops)obj).ORT_NR = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusExceptionTimeBetweenStops)obj).ORT_NR = null;
                else
                {
-                  ((BusExceptionTimeBetweenStops)obj).ORT_NR = value.string();
+                  ((it.sasabz.sasabus.opendata.client.model.BusExceptionTimeBetweenStops)obj).ORT_NR = value.string();
                }
             structure.close();
          }
@@ -1168,26 +1179,26 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             // FRT_FID
             if ((value = structure.property("FRT_FID")) != null)
                if (value.isNull())
-                  ((BusWaitTimeAtStop)obj).FRT_FID = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusWaitTimeAtStop)obj).FRT_FID = null;
                else
                {
-                  ((BusWaitTimeAtStop)obj).FRT_FID = value.string();
+                  ((it.sasabz.sasabus.opendata.client.model.BusWaitTimeAtStop)obj).FRT_FID = value.string();
                }
             // FRT_HZT_ZEIT
             if ((value = structure.property("FRT_HZT_ZEIT")) != null)
                if (value.isNull())
-                  ((BusWaitTimeAtStop)obj).FRT_HZT_ZEIT = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusWaitTimeAtStop)obj).FRT_HZT_ZEIT = null;
                else
                {
-                  ((BusWaitTimeAtStop)obj).FRT_HZT_ZEIT = value.string();
+                  ((it.sasabz.sasabus.opendata.client.model.BusWaitTimeAtStop)obj).FRT_HZT_ZEIT = value.string();
                }
             // ORT_NR
             if ((value = structure.property("ORT_NR")) != null)
                if (value.isNull())
-                  ((BusWaitTimeAtStop)obj).ORT_NR = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusWaitTimeAtStop)obj).ORT_NR = null;
                else
                {
-                  ((BusWaitTimeAtStop)obj).ORT_NR = value.string();
+                  ((it.sasabz.sasabus.opendata.client.model.BusWaitTimeAtStop)obj).ORT_NR = value.string();
                }
             structure.close();
          }
@@ -1223,26 +1234,26 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             // FGR_NR
             if ((value = structure.property("FGR_NR")) != null)
                if (value.isNull())
-                  ((BusDefaultWaitTimeAtStop)obj).FGR_NR = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusDefaultWaitTimeAtStop)obj).FGR_NR = null;
                else
                {
-                  ((BusDefaultWaitTimeAtStop)obj).FGR_NR = value.string();
+                  ((it.sasabz.sasabus.opendata.client.model.BusDefaultWaitTimeAtStop)obj).FGR_NR = value.string();
                }
             // HP_HZT
             if ((value = structure.property("HP_HZT")) != null)
                if (value.isNull())
-                  ((BusDefaultWaitTimeAtStop)obj).HP_HZT = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusDefaultWaitTimeAtStop)obj).HP_HZT = null;
                else
                {
-                  ((BusDefaultWaitTimeAtStop)obj).HP_HZT = value.string();
+                  ((it.sasabz.sasabus.opendata.client.model.BusDefaultWaitTimeAtStop)obj).HP_HZT = value.string();
                }
             // ORT_NR
             if ((value = structure.property("ORT_NR")) != null)
                if (value.isNull())
-                  ((BusDefaultWaitTimeAtStop)obj).ORT_NR = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusDefaultWaitTimeAtStop)obj).ORT_NR = null;
                else
                {
-                  ((BusDefaultWaitTimeAtStop)obj).ORT_NR = value.string();
+                  ((it.sasabz.sasabus.opendata.client.model.BusDefaultWaitTimeAtStop)obj).ORT_NR = value.string();
                }
             structure.close();
          }
@@ -1287,50 +1298,50 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             // FGR_NR
             if ((value = structure.property("FGR_NR")) != null)
                if (value.isNull())
-                  ((BusLineWaitTimeAtStop)obj).FGR_NR = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusLineWaitTimeAtStop)obj).FGR_NR = null;
                else
                {
-                  ((BusLineWaitTimeAtStop)obj).FGR_NR = value.string();
+                  ((it.sasabz.sasabus.opendata.client.model.BusLineWaitTimeAtStop)obj).FGR_NR = value.string();
                }
             // LIVAR_HZT_ZEIT
             if ((value = structure.property("LIVAR_HZT_ZEIT")) != null)
                if (value.isNull())
-                  ((BusLineWaitTimeAtStop)obj).LIVAR_HZT_ZEIT = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusLineWaitTimeAtStop)obj).LIVAR_HZT_ZEIT = null;
                else
                {
-                  ((BusLineWaitTimeAtStop)obj).LIVAR_HZT_ZEIT = value.string();
+                  ((it.sasabz.sasabus.opendata.client.model.BusLineWaitTimeAtStop)obj).LIVAR_HZT_ZEIT = value.string();
                }
             // LI_LFD_NR
             if ((value = structure.property("LI_LFD_NR")) != null)
                if (value.isNull())
-                  ((BusLineWaitTimeAtStop)obj).LI_LFD_NR = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusLineWaitTimeAtStop)obj).LI_LFD_NR = null;
                else
                {
-                  ((BusLineWaitTimeAtStop)obj).LI_LFD_NR = value.string();
+                  ((it.sasabz.sasabus.opendata.client.model.BusLineWaitTimeAtStop)obj).LI_LFD_NR = value.string();
                }
             // LI_NR
             if ((value = structure.property("LI_NR")) != null)
                if (value.isNull())
-                  ((BusLineWaitTimeAtStop)obj).LI_NR = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusLineWaitTimeAtStop)obj).LI_NR = null;
                else
                {
-                  ((BusLineWaitTimeAtStop)obj).LI_NR = value.string();
+                  ((it.sasabz.sasabus.opendata.client.model.BusLineWaitTimeAtStop)obj).LI_NR = value.string();
                }
             // ORT_NR
             if ((value = structure.property("ORT_NR")) != null)
                if (value.isNull())
-                  ((BusLineWaitTimeAtStop)obj).ORT_NR = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusLineWaitTimeAtStop)obj).ORT_NR = null;
                else
                {
-                  ((BusLineWaitTimeAtStop)obj).ORT_NR = value.string();
+                  ((it.sasabz.sasabus.opendata.client.model.BusLineWaitTimeAtStop)obj).ORT_NR = value.string();
                }
             // STR_LI_VAR
             if ((value = structure.property("STR_LI_VAR")) != null)
                if (value.isNull())
-                  ((BusLineWaitTimeAtStop)obj).STR_LI_VAR = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusLineWaitTimeAtStop)obj).STR_LI_VAR = null;
                else
                {
-                  ((BusLineWaitTimeAtStop)obj).STR_LI_VAR = value.string();
+                  ((it.sasabz.sasabus.opendata.client.model.BusLineWaitTimeAtStop)obj).STR_LI_VAR = value.string();
                }
             structure.close();
          }
@@ -1360,10 +1371,10 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             // name
             if ((value = structure.property("name")) != null)
                if (value.isNull())
-                  ((Favourite)obj).name = null;
+                  ((it.sasabz.sasabus.opendata.client.model.Favourite)obj).name = null;
                else
                {
-                  ((Favourite)obj).name = value.string();
+                  ((it.sasabz.sasabus.opendata.client.model.Favourite)obj).name = value.string();
                }
             structure.close();
          }
@@ -1459,7 +1470,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             // varlist
             if ((value = structure.property("varlist")) != null)
                if (value.isNull())
-                  ((BusTripStartDayType)obj).varlist = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusTripStartDayType)obj).varlist = null;
                else
                {
                   bz.davide.dmxmljson.unmarshalling.Array arr = value.array();        
@@ -1524,7 +1535,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             // routelist
             if ((value = structure.property("routelist")) != null)
                if (value.isNull())
-                  ((BusPathVariant)obj).routelist = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusPathVariant)obj).routelist = null;
                else
                {
                   bz.davide.dmxmljson.unmarshalling.Array arr = value.array();        
@@ -1579,7 +1590,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
             // triplist
             if ((value = structure.property("triplist")) != null)
                if (value.isNull())
-                  ((BusTripStartVariant)obj).triplist = null;
+                  ((it.sasabz.sasabus.opendata.client.model.BusTripStartVariant)obj).triplist = null;
                else
                {
                   bz.davide.dmxmljson.unmarshalling.Array arr = value.array();        
