@@ -60,7 +60,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                      }                                                                   
                   }                                                                   
                   arr.close();        
-                  ((BusLineList)obj).list = arrayList;
+                  ((it.sasabz.sasabus.opendata.client.model.BusLineList)obj).list = arrayList;
                }
             structure.close();
          }
@@ -113,7 +113,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                      }                                                                   
                   }                                                                   
                   arr.close();        
-                  ((BusStationList)obj).list = arrayList;
+                  ((it.sasabz.sasabus.opendata.client.model.BusStationList)obj).list = arrayList;
                }
             structure.close();
          }
@@ -167,7 +167,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                      }                                                                   
                   }                                                                   
                   arr.close();        
-                  ((StartDateList)obj).list = arrayList;
+                  ((it.sasabz.sasabus.opendata.client.model.StartDateList)obj).list = arrayList;
                }
             structure.close();
          }
@@ -221,7 +221,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                      }                                                                   
                   }                                                                   
                   arr.close();        
-                  ((BusTripStartList)obj).list = arrayList;
+                  ((it.sasabz.sasabus.opendata.client.model.BusTripStartList)obj).list = arrayList;
                }
             structure.close();
          }
@@ -275,7 +275,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                      }                                                                   
                   }                                                                   
                   arr.close();        
-                  ((BusDayTypeList)obj).list = arrayList;
+                  ((it.sasabz.sasabus.opendata.client.model.BusDayTypeList)obj).list = arrayList;
                }
             structure.close();
          }
@@ -329,7 +329,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                      }                                                                   
                   }                                                                   
                   arr.close();        
-                  ((BusPathList)obj).list = arrayList;
+                  ((it.sasabz.sasabus.opendata.client.model.BusPathList)obj).list = arrayList;
                }
             structure.close();
          }
@@ -383,7 +383,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                      }                                                                   
                   }                                                                   
                   arr.close();        
-                  ((BusStandardTimeBetweenStopsList)obj).list = arrayList;
+                  ((it.sasabz.sasabus.opendata.client.model.BusStandardTimeBetweenStopsList)obj).list = arrayList;
                }
             structure.close();
          }
@@ -437,7 +437,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                      }                                                                   
                   }                                                                   
                   arr.close();        
-                  ((BusExceptionTimeBetweenStopsList)obj).list = arrayList;
+                  ((it.sasabz.sasabus.opendata.client.model.BusExceptionTimeBetweenStopsList)obj).list = arrayList;
                }
             structure.close();
          }
@@ -491,7 +491,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                      }                                                                   
                   }                                                                   
                   arr.close();        
-                  ((BusWaitTimeAtStopList)obj).list = arrayList;
+                  ((it.sasabz.sasabus.opendata.client.model.BusWaitTimeAtStopList)obj).list = arrayList;
                }
             structure.close();
          }
@@ -545,7 +545,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                      }                                                                   
                   }                                                                   
                   arr.close();        
-                  ((BusDefaultWaitTimeAtStopList)obj).list = arrayList;
+                  ((it.sasabz.sasabus.opendata.client.model.BusDefaultWaitTimeAtStopList)obj).list = arrayList;
                }
             structure.close();
          }
@@ -599,7 +599,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                      }                                                                   
                   }                                                                   
                   arr.close();        
-                  ((BusLineWaitTimeAtStopList)obj).list = arrayList;
+                  ((it.sasabz.sasabus.opendata.client.model.BusLineWaitTimeAtStopList)obj).list = arrayList;
                }
             structure.close();
          }
@@ -653,7 +653,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                      }                                                                   
                   }                                                                   
                   arr.close();        
-                  ((FavouriteList)obj).list = arrayList;
+                  ((it.sasabz.sasabus.opendata.client.model.FavouriteList)obj).list = arrayList;
                }
             structure.close();
          }
@@ -700,7 +700,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                   new RuntimeException("Impossibile value for primitive type");
                else
                {
-                  ((BusLine)obj).LI_NR = (int)value.integer();
+                  ((it.sasabz.sasabus.opendata.client.model.BusLine)obj).LI_NR = (int)value.integer();
                }
             // varlist
             if ((value = structure.property("varlist")) != null)
@@ -719,7 +719,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                         arrayList[i] = ((int)value.integer());
                   }                                                                   
                   arr.close();        
-                  ((BusLine)obj).varlist = arrayList;
+                  ((it.sasabz.sasabus.opendata.client.model.BusLine)obj).varlist = arrayList;
                }
             structure.close();
          }
@@ -787,7 +787,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                         arrayList.add((int)value.integer());
                   }                                                                   
                   arr.close();        
-                  ((BusStation)obj).busLineIds = arrayList;
+                  ((it.sasabz.sasabus.opendata.client.model.BusStation)obj).busLineIds = arrayList;
                }
             // busstops
             if ((value = structure.property("busstops")) != null)
@@ -815,7 +815,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                      }                                                                   
                   }                                                                   
                   arr.close();        
-                  ((BusStation)obj).busstops = arrayList;
+                  ((it.sasabz.sasabus.opendata.client.model.BusStation)obj).busstops = arrayList;
                }
             structure.close();
          }
@@ -884,7 +884,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                   new RuntimeException("Impossibile value for primitive type");
                else
                {
-                  ((BusTripStartLine)obj).LI_NR = (int)value.integer();
+                  ((it.sasabz.sasabus.opendata.client.model.BusTripStartLine)obj).LI_NR = (int)value.integer();
                }
             // tagesartlist
             if ((value = structure.property("tagesartlist")) != null)
@@ -913,7 +913,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                      }                                                                   
                   }                                                                   
                   arr.close();        
-                  ((BusTripStartLine)obj).tagesartlist = arrayList;
+                  ((it.sasabz.sasabus.opendata.client.model.BusTripStartLine)obj).tagesartlist = arrayList;
                }
             structure.close();
          }
@@ -1022,7 +1022,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                      }                                                                   
                   }                                                                   
                   arr.close();        
-                  ((BusPathLine)obj).varlist = arrayList;
+                  ((it.sasabz.sasabus.opendata.client.model.BusPathLine)obj).varlist = arrayList;
                }
             structure.close();
          }
@@ -1413,7 +1413,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                   new RuntimeException("Impossibile value for primitive type");
                else
                {
-                  ((BusStop)obj).ORT_NR = (int)value.integer();
+                  ((it.sasabz.sasabus.opendata.client.model.BusStop)obj).ORT_NR = (int)value.integer();
                }
             // ORT_POS_BREITE
             if ((value = structure.property("ORT_POS_BREITE")) != null)
@@ -1421,7 +1421,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                   new RuntimeException("Impossibile value for primitive type");
                else
                {
-                  ((BusStop)obj).ORT_POS_BREITE = value.decimal();
+                  ((it.sasabz.sasabus.opendata.client.model.BusStop)obj).ORT_POS_BREITE = value.decimal();
                }
             // ORT_POS_LAENGE
             if ((value = structure.property("ORT_POS_LAENGE")) != null)
@@ -1429,7 +1429,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                   new RuntimeException("Impossibile value for primitive type");
                else
                {
-                  ((BusStop)obj).ORT_POS_LAENGE = value.decimal();
+                  ((it.sasabz.sasabus.opendata.client.model.BusStop)obj).ORT_POS_LAENGE = value.decimal();
                }
             structure.close();
          }
@@ -1465,7 +1465,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                   new RuntimeException("Impossibile value for primitive type");
                else
                {
-                  ((BusTripStartDayType)obj).TAGESART_NR = (int)value.integer();
+                  ((it.sasabz.sasabus.opendata.client.model.BusTripStartDayType)obj).TAGESART_NR = (int)value.integer();
                }
             // varlist
             if ((value = structure.property("varlist")) != null)
@@ -1494,7 +1494,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                      }                                                                   
                   }                                                                   
                   arr.close();        
-                  ((BusTripStartDayType)obj).varlist = arrayList;
+                  ((it.sasabz.sasabus.opendata.client.model.BusTripStartDayType)obj).varlist = arrayList;
                }
             structure.close();
          }
@@ -1530,7 +1530,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                   new RuntimeException("Impossibile value for primitive type");
                else
                {
-                  ((BusPathVariant)obj).STR_LI_VAR = (int)value.integer();
+                  ((it.sasabz.sasabus.opendata.client.model.BusPathVariant)obj).STR_LI_VAR = (int)value.integer();
                }
             // routelist
             if ((value = structure.property("routelist")) != null)
@@ -1549,7 +1549,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                         arrayList[i] = ((int)value.integer());
                   }                                                                   
                   arr.close();        
-                  ((BusPathVariant)obj).routelist = arrayList;
+                  ((it.sasabz.sasabus.opendata.client.model.BusPathVariant)obj).routelist = arrayList;
                }
             structure.close();
          }
@@ -1585,7 +1585,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                   new RuntimeException("Impossibile value for primitive type");
                else
                {
-                  ((BusTripStartVariant)obj).STR_LI_VAR = (int)value.integer();
+                  ((it.sasabz.sasabus.opendata.client.model.BusTripStartVariant)obj).STR_LI_VAR = (int)value.integer();
                }
             // triplist
             if ((value = structure.property("triplist")) != null)
@@ -1614,7 +1614,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                      }                                                                   
                   }                                                                   
                   arr.close();        
-                  ((BusTripStartVariant)obj).triplist = arrayList;
+                  ((it.sasabz.sasabus.opendata.client.model.BusTripStartVariant)obj).triplist = arrayList;
                }
             structure.close();
          }
@@ -1653,7 +1653,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                   new RuntimeException("Impossibile value for primitive type");
                else
                {
-                  ((BusTripStartTime)obj).FGR_NR = (int)value.integer();
+                  ((it.sasabz.sasabus.opendata.client.model.BusTripStartTime)obj).FGR_NR = (int)value.integer();
                }
             // FRT_FID
             if ((value = structure.property("FRT_FID")) != null)
@@ -1661,7 +1661,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                   new RuntimeException("Impossibile value for primitive type");
                else
                {
-                  ((BusTripStartTime)obj).FRT_FID = (int)value.integer();
+                  ((it.sasabz.sasabus.opendata.client.model.BusTripStartTime)obj).FRT_FID = (int)value.integer();
                }
             // FRT_START
             if ((value = structure.property("FRT_START")) != null)
@@ -1669,7 +1669,7 @@ public class SASAbusOpenDataUnmarshaller_Helper extends bz.davide.dmxmljson.unma
                   new RuntimeException("Impossibile value for primitive type");
                else
                {
-                  ((BusTripStartTime)obj).FRT_START = (int)value.integer();
+                  ((it.sasabz.sasabus.opendata.client.model.BusTripStartTime)obj).FRT_START = (int)value.integer();
                }
             structure.close();
          }
